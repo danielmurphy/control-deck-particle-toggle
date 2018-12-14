@@ -1,0 +1,12 @@
+{
+	"name": "control-deck-particle-toggle",
+	"version": "1.0.0",
+	"description": "Control Deck plugin to toggle something with a Particle board",
+	"main": "index.js",
+	"author": "Daniel Murphy",
+	"license": "MIT",
+	"private": false,
+	"dependencies": {
+		"particle-api-js": "^7.2.3"
+	}
+}
