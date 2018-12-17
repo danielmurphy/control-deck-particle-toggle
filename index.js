@@ -28,7 +28,7 @@ class ControlDeckParticleToggle {
     this._getStatus();
     setInterval(() => {
       this._getStatus();
-    }, 1000);
+    }, 5000);
 
     this.streamDeck.on('up', keyIndex => {
       if (keyIndex === this.buttonId) {
@@ -52,7 +52,6 @@ class ControlDeckParticleToggle {
   _setStatus(newStatus) {
     if (this.status !== null && this.status !== newStatus) {
       const functionToCall = newStatus ? this.onFunction : this.offFunction;
-      console.log(`sending ${functionToCall}`);
       this.particle.callFunction({
         name: functionToCall,
         deviceId: this.particleId,
